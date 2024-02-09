@@ -1,0 +1,29 @@
+-------Part 1--------
+max int       = 2147483647
+2^31-1        = 2147483647
+int.MaxValue  = 2147483647
+
+min int       = -2147483648
+-2^31         = -2147483648
+int.MinValue  = -2147483648
+
+------Part 2--------
+double epsilon = 2.22044604925031E-16
+2^-52          = 2.22044604925031E-16
+float epsilon  = 1.192093E-07
+2^-23          = 1.19209289550781E-07
+
+------Part 3--------
+a==b => False
+a>1  => False
+b>1  => True
+   a =  1
+   b =  1
+The operations are done from the left and thus 1+tiny
+is swallowed by the 1 while tiny + tiny + 1 = eps + 1.
+
+------Part 4--------
+d1=7.999999999999999e-001
+d2=8.000000000000000e-001
+d1==d2 => False
+d1=~d2 => True
