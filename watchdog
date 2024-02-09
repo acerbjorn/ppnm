@@ -1,0 +1,14 @@
+#!/bin/bash
+
+inotifywait -e close_write,moved_to,create -mr . |
+while read -r directory events filename; do
+  if [[ "$filename" =~ \.cs$ ]]; then
+    echo "Parsing $directory$filename"
+    mcs --parse "$directory$filename"
+    echo "~Fin"
+  elif [ "$filename" == "Out.txt" ]; then
+    echo "════════════Output═════════════"
+    cat "$directory$filename"
+    echo "═══════════════════════════════"
+  fi
+done
