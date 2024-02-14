@@ -1,0 +1,20 @@
+Testing multiplication
+	  Test passed
+Testing rh multiplication
+	  Test passed
+Testing division
+	  Test passed
+Testing addition
+	  Test passed
+Testing subtraction
+	  Test passed
+Testing negation
+	  Test passed
+ones=1 1 1
+1 1 1
+Testing dot product
+	  Test passed
+Testing approx()
+	  Test passed
+
+All tests passed.
