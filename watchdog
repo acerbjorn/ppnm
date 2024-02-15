@@ -7,7 +7,7 @@ while read -r directory events filename; do
     echo "Parsing $directory$filename"
     mcs --parse "$directory$filename"
     echo "~Fin"
-  elif [ "$filename" == "Out.txt" ]; then
+  elif [[ "$filename" =~ \.txt$ ]]; then
     echo ""
     echo "════════════Output═════════════"
     cat "$directory$filename"
