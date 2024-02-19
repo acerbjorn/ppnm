@@ -1,0 +1,13 @@
+\
+	set terminal svg background "white";\
+	set out "lngamma.gnuplot.svg";\
+	set key left;\
+	set xlabel "x";\
+	set ylabel "ln(Γ(x))";\
+	set title "Logarithmic Gamma function";\
+	set tics out ;\
+	set grid ;\
+	plot [0:20] \
+		"Out-lngamma.txt" with lines title "ln(Γ(x))",\
+		"Out-lnfact.txt" with points pointtype 6 title "ln((x-1)!)";\
+
