@@ -1,0 +1,11 @@
+Testing decomposition of 1000 n×m matrices with 2<=m<=n<=100
+Finished tests:
+	For 1000/1000 R was upper triangular
+	For 1000/1000 Q'Q = I
+	For 1000/1000 QR = A
+Testing solving of 1000 n×n matrices with 2<=n<=100
+Finished tests:
+	For 1000/1000 found x such that Ax=b
+Testing inversion of 1000 n×n matrices with 2<=n<=100
+Finished tests:
+	For 1000/1000 found A⁻¹ such that A⁻¹A=I
