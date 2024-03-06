@@ -9,7 +9,7 @@ set yrange [0:1]
 set title "Timing QRGS implementation"
 set tics out 
 set grid 
-set multiplot
+#set multiplot
 
 O(x) = a*x**3
 a = 1
@@ -25,4 +25,3 @@ do for [filename in datafiles]  {
 		O(x) notitle;\
 }
 
-unset multiplot

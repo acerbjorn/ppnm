@@ -1,0 +1,6 @@
+Testing decomposition of 1000 n×n symmetric matrices with 2<=n<=100
+Finished tests:
+	For 1000/1000 V'AV = D
+	For 1000/1000 VDV' = A
+	For 1000/1000 V'V = I 
+	For 1000/1000 VV' = I
