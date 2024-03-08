@@ -5,3 +5,5 @@ This folder contains my implementation with eigenvalue decomposition in the evd.
 The tests are run by test.cs and the output is piped to Out.txt
 
 ![[Out.txt]]
+
+$$ \delta(\ln(y)) = \frac{\delta y}{y}$$
