@@ -21,7 +21,7 @@ $$
 f(r \to 0) \to r\cdot A_n L_{n-1}(0)
 $$
 
-Since $L_{n-1} is a polynomial it follows that it does not diverge at $r=0$ so,
+Since $L_{n-1}$ is a polynomial it follows that it does not diverge at $r=0$ so,
 
 $$
 f(r \to 0) \to 0.
