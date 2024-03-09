@@ -15,7 +15,8 @@ where f(r) is the reduced radial wave-function, $f(r)=r\psi(r)$; $\epsilon$ is t
 We now investigate the boundary conditions of the s-waves. Reducing the general hydrogen wavefunction to $l=0,\, m=0$, an s-wave of level $n$ can be written in terms of a constant $A_n$, an exponential part, and a Laguerre potential $L_{n-1}$.
 
 $$
-f(r) = rA_n e^{\frac{-r}{na_0^{*}}}L_{n-1}(r)\\
+f(r) = rA_n e^{\frac{-r}{na_0^{*}}}L_{n-1}(r)$$
+$$
 f(r \to 0) \to r\cdot A_n L_{n-1}(0)
 $$
 
