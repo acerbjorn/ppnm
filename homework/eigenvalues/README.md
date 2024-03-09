@@ -16,11 +16,13 @@ We now investigate the boundary conditions of the s-waves. Reducing the general 
 
 $$
 f(r) = rA_n e^{\frac{-r}{na_0^{*}}}L_{n-1}(r)$$
+
 $$
 f(r \to 0) \to r\cdot A_n L_{n-1}(0)
 $$
 
 Since $L_{n-1} is a polynomial it follows that it does not diverge at $r=0$ so,
+
 $$
 f(r \to 0) \to 0.
 $$
