@@ -18,9 +18,17 @@ class math {
 		for (int i=1; i<=10; i++) {
 			GammaTest(i);
 		}
+		Write("\n-----LOG GAMMA FUNCTIONS------\n");
+		for (int i=1; i<=10; i++) {
+			LnGammaTest(i);
+		}
 	}
 	static void GammaTest(double x) {
-		Write($"Using sfuns\tΓ({x})=\t{fgamma(x)}\n");
+		Write($"Using sfuns \tΓ({x})=\t{fgamma(x)}\n");
 		Write($"Using ({x}-1)!\tΓ({x})=\t{Fact((int)x-1)}\n");
+	}
+	static void LnGammaTest(double x) {
+		Write($"Using sfuns \tln(Γ({x}))=\t{lngamma(x)}\n");
+		Write($"Using ({x}-1)!\tln(Γ({x}))=\t{Log(Fact((int)x-1))}\n");
 	}
 }
