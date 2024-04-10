@@ -1,5 +1,5 @@
 Out.txt: hello.exe
-	mono hello.exe > Out.txt
+	mono hello.exe $$(whoami) > Out.txt
 
 hello.exe : hello.cs
 	mcs hello.cs
