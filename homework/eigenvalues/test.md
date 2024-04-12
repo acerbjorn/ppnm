@@ -15,14 +15,11 @@ where f(r) is the reduced radial wave-function, $f(r)=r\psi(r)$; $\epsilon$ is t
 We now investigate the boundary conditions of the s-waves. Reducing the general hydrogen wavefunction to $l=0,\, m=0$, an s-wave of level $n$ can be written in terms of a constant $A_n$, an exponential part, and a Laguerre potential $L_{n-1}$.
 
 $$
-f(r) = rA_n e^{\frac{-r}{na_0^{*}}}L_{n-1}(r)$$
-
-$$
+f(r) = rA_n e^{\frac{-r}{na_0^{*}}}L_{n-1}(r)\\
 f(r \to 0) \to r\cdot A_n L_{n-1}(0)
 $$
 
-Since $L_{n-1}$ is a polynomial it follows that it does not diverge at $r=0$ so,
-
+Since $L_{n-1} is a polynomial it follows that it does not diverge at $r=0$ so,
 $$
 f(r \to 0) \to 0.
 $$
@@ -30,9 +27,5 @@ $$
 At $r\to\infty$ the exponential part dominates so,
 
 $$f(r\to\infty) \to 0 .$$
-
-We choose a $r_\text{max}$ where our boundary conditions approximately hold. We now partition the $[0, r_\text{max}]$ range into points separated by $\Delta r$. This allows treating the differential equation as an eigenvalue problem.
-
-$$ Hf = \epsilon f$$.
 
 

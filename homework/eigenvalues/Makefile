@@ -2,7 +2,8 @@ TIMES = $(filter time.%.txt, $^)
 GPVARS = "datafiles = '$(TIMES)'; n_files = $(words $(TIMES))"
 
 .PHONEY: default
-default: Out.txt
+default: hydrogen_atom.exe Out.txt
+	mono hydrogen_atom.exe -w
 
 include ../preamble.mk
 
@@ -13,22 +14,24 @@ include ../preamble.mk
 scenic: default
 	imv *.svg	
 
+wavefunction.txt: hydrogen_atom.exe
+	mono $< -w > $@
+
 Out.txt: test.exe
-	mono test.exe -tests:1000 -max_dim:100 > $@
+	mono test.exe -tests:1000 -max_dim:10 > $@
 
 time.%.txt: time.exe
 	for timed_var in $$(seq 5 5 400); do\
 		$(TIME) mono time.exe $* $$timed_var;\
 	done
 
-test.exe: test.cs matrix.dll evd.dll
-	$(MKEXE)
+test.exe : test.cs evd.dll matrix.dll hamiltonian.dll; $(MKEXE)
 	
-time.exe: time.cs matrix.dll evd.dll
-	$(MKEXE)
+hydrogen_atom.exe : hydrogen_atom.cs evd.dll matrix.dll hamiltonian.dll; $(MKEXE)
 
-evd.dll: evd.cs matrix.dll
-	$(MKLIB)
+evd.dll: evd.cs matrix.dll;	$(MKLIB)
+
+hamiltonian.dll: hamiltonian.cs matrix.dll;	$(MKLIB)
 
 .PHONEY: clean
 clean: 
