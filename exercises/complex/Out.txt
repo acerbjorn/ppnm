@@ -1,0 +1,21 @@
+sqrt(-1)	=6.12e-17+1i
+This is approx i=0+1i
+
+sqrt(i)	=0.707+0.707i
+This is approx =0.707+0.707i
+
+e^i	=0.54+0.841i
+This is approx =0.54+0.841i
+
+sqrt(e^(iπ))	=-1+-2.07e-13i
+This is approx =-1+0i
+
+i^i	=0.208+0i
+This is approx =0.208+0i
+
+ln(i)	=0+1.57i
+This is approx =0+1.57i
+
+sin(iπ)	=0+11.5i
+This is approx =0+11.5i
+

@@ -1,0 +1,18 @@
+ 1.29e+02  2.48e+01  4.85e+00 
+ 8.86e+01  3.37e+01  7.78e+00 
+ 3.04e+01  9.98e+01  6.72e+00 
+-1.33e+00  9.63e+01  2.23e+00 
+
+
+ Let's attempt to remove a line from this table.
+Here's the list without the second entry.
+ 1.29e+02  2.48e+01  4.85e+00 
+ 8.86e+01  3.37e+01  7.78e+00 
+-1.33e+00  9.63e+01  2.23e+00 
+
+
+Now we'll attempt to pop the last element and print it alone.
+3-1.33e+00  9.63e+01  2.23e+00 
+And here's the remaining list
+ 1.29e+02  2.48e+01  4.85e+00 
+ 8.86e+01  3.37e+01  7.78e+00 
