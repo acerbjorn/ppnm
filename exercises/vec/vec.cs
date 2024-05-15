@@ -32,13 +32,19 @@ public class vec : IEquatable<vec> {
     public static double dot(vec u, vec v) {
         return u.x*v.x +u.y*v.y +u.z*v.z;  
     }
+    public double squared() {
+        return this.x*this.x + this.y*this.y + this.z*this.z;
+    }
+    public double length() {
+        return Sqrt(this.squared());
+    }
 
     public bool approx(vec rhs){
         return approx(this.x, rhs.x) &&
                approx(this.y, rhs.y) &&
                approx(this.z, rhs.z);
     }
-    static bool approx(double a, double b, double acc=1e-9, double eps=1e-9){
+    public static bool approx(double a, double b, double acc=1e-9, double eps=1e-9){
         double d = Abs(a-b);
         return (d <= acc) || (d <= Max(Abs(a),Abs(b))*eps);
     }

@@ -1,20 +1,8 @@
-Testing multiplication
-	  Test passed
-Testing rh multiplication
-	  Test passed
-Testing division
-	  Test passed
-Testing addition
-	  Test passed
-Testing subtraction
-	  Test passed
-Testing negation
-	  Test passed
-ones=1 1 1
-1 1 1
-Testing dot product
-	  Test passed
-Testing approx()
-	  Test passed
-
-All tests passed.
+Ran testing
+	For 1000/1000 dot product commutes
+	For 1000/1000 addition commutes
+	For 1000/1000 subtraction works
+	For 1000/1000 approximation works
+	For 1000/1000 doubling works
+	For 1000/1000 halving works
+	For 1000/1000 orthogonalization works
