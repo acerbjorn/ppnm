@@ -4,6 +4,7 @@ Repository for praktisk programmering og nummeriske metoder
 ## Status
 
 ### Exercises
+
  ===============================
 | #  | exercises       | Status |
  ===============================
@@ -34,7 +35,9 @@ Repository for praktisk programmering og nummeriske metoder
 
 
 ### Homework
+
 Haven't been counted up yet.
+
  ======================================
 | #  | homework      | A | B | C | Σ   |
  ======================================
