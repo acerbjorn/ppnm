@@ -20,6 +20,8 @@ class main {
         Write("float epsilon  = {0}\n",y);
         Write("2^-23          = {0}\n",Pow(2,-23));
         Write("\n------Part 3--------\n");
+        Write("a=1+tiny+tiny;\n");
+        Write("b=tiny+tiny+1;\n")
         double epsilon=Pow(2,-52);
         double tiny=epsilon/2;
         double a=1+tiny+tiny;

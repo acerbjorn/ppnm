@@ -56,5 +56,5 @@ lngamma.gnuplot.svg: Out-lngamma.txt Out-lnfact.txt Makefile
 Out-%.txt: %.exe
 		mono $< > $@
 		
-sfuns.dll: sfuns.cs; $(MKLIB)
+sfuns.dll: sfuns.cs ; $(MKLIB)
 %.exe: %.cs sfuns.dll; $(MKEXE)
