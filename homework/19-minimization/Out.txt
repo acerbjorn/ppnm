@@ -1,0 +1,32 @@
+Testing minimization of a parabolic function f(x) = |x|², starting guess (13, 20, 16, 0, 19, 6, )
+	We expect minima at (0).
+	Found minima at (2.52674395157682E-10, 4.37501760514047E-10, 2.41258452451931E-10, 0, -1.22649581442912E-10, -5.5660768702448E-10, )
+Testing minimization of the rosenbrock function, starting guess (0, 0, )
+	We expect minima at (1,1).
+	Found minima at (0.999952234227873, 0.999902153278011, )
+Testing minimization of the himmelblau function, 100 randomized starting points in [-6,6]x[-6,6]
+	We expect four distinct minima.
+	Found extrema at (-3.77939543816322, -3.28324180036708, ), f(x) = 0.000
+	Found extrema at (0.0866777254881108, 2.88425522870187, ), f(x) = 67.719
+	Found extrema at (1.89022672543778, -0.806608784388103, ), f(x) = 87.677
+	Found extrema at (-2.80512903415919, 3.13131321333379, ), f(x) = 0.000
+	Found extrema at (2.99998728490402, 2.00005731209406, ), f(x) = 0.000
+	Found extrema at (3.58447546391756, -1.84864883908278, ), f(x) = 0.000
+	Found extrema at (-3.18217508112897, 0.79027622932116, ), f(x) = 91.355
+	Found extrema at (0.675627789774737, 2.60080808801614, ), f(x) = 63.280
+	Found extrema at (0.172725043339993, 0.303098931118427, ), f(x) = 159.152
+	Found extrema at (-0.252933449023092, 2.92063699644831, ), f(x) = 65.878
+	Found extrema at (3.36596859222592, 0.111152285012243, ), f(x) = 13.311
+	Found extrema at (-0.127946101501091, -1.95382235262378, ), f(x) = 178.337
+	Found extrema at (0.584799760293587, -2.3220512514571, ), f(x) = 169.529
+	Found extrema at (-1.37571235343183, 3.24541994137157, ), f(x) = 39.016
+	Found extrema at (-3.07326854534785, -0.0812837112792891, ), f(x) = 104.015
+	Found extrema at (3.43532898737093, -0.0643134863424332, ), f(x) = 13.221
+	Found extrema at (-3.32596011575687, 1.32754294168874, ), f(x) = 75.266
+	Found extrema at (0.688077872008122, -2.32767903447509, ), f(x) = 166.030
+	Found extrema at (-2.8473186310601, -0.730067965914526, ), f(x) = 99.882
+	Found extrema at (-1.46357800660394, -2.52990696828881, ), f(x) = 133.940
+	Found extrema at (3.42016413520333, 0.740482289328105, ), f(x) = 11.258
+	Found extrema at (-1.42946623239176, 2.87045923288467, ), f(x) = 37.078
+	Found extrema at (3.38520142640877, 0.0738636631973776, ), f(x) = 13.312
+	Found extrema at (-0.739943803632606, 0.386840827011895, ), f(x) = 158.930

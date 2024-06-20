@@ -1,0 +1,1769 @@
+Testing hessian on different points, in dimensions of n∈[1,10]
+Forward difference numeric hessian did not return correct answer
+P0:      -7.79      -0.66 
+H_fwd:
+	         2          0 
+	         0       2.13 
+Central difference numeric hessian did not return correct answer
+P0:      -7.79      -0.66 
+H_cen:
+	         2          0 
+	         0       2.03 
+Central difference upper triangular numeric hessian did not return correct answer
+P0:      -7.79      -0.66 
+H_cen_u:
+	         2          0 
+	         0       2.03 
+Forward difference numeric hessian did not return correct answer
+P1:       3.15      -1.34      -2.92       8.88 
+H_fwd:
+	      1.98     -0.059    -0.0272          0 
+	    -0.059       1.87          0          0 
+	   -0.0272          0       1.99          0 
+	         0          0          0          2 
+Central difference numeric hessian did not return correct answer
+P1:       3.15      -1.34      -2.92       8.88 
+H_cen:
+	         2    -0.0148    -0.0068          0 
+	   -0.0148       2.04     0.0159          0 
+	   -0.0068     0.0159       2.01          0 
+	         0          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P1:       3.15      -1.34      -2.92       8.88 
+H_cen_u:
+	         2    -0.0148    -0.0068          0 
+	   -0.0148       2.04     0.0159          0 
+	   -0.0068     0.0159       2.01          0 
+	         0          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P2:       2.85      -9.43 
+H_fwd:
+	         2          0 
+	         0       1.99 
+Central difference numeric hessian did not return correct answer
+P2:       2.85      -9.43 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P2:       2.85      -9.43 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P3:       -3.6        9.8 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P3:       -3.6        9.8 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P3:       -3.6        9.8 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P4:        3.1      -4.35       2.31       4.09 
+H_fwd:
+	         2          0          0          0 
+	         0       2.01     0.0125          0 
+	         0     0.0125       2.02          0 
+	         0          0          0          2 
+Central difference numeric hessian did not return correct answer
+P4:        3.1      -4.35       2.31       4.09 
+H_cen:
+	         2   -0.00232          0    0.00247 
+	  -0.00232          2    0.00312          0 
+	         0    0.00312          2   -0.00332 
+	   0.00247          0   -0.00332          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P4:        3.1      -4.35       2.31       4.09 
+H_cen_u:
+	         2   -0.00232          0    0.00247 
+	  -0.00232          2    0.00312          0 
+	         0    0.00312          2   -0.00332 
+	   0.00247          0   -0.00332          2 
+Forward difference numeric hessian did not return correct answer
+P5:          9      -8.13      -6.78      -2.36 
+H_fwd:
+	      1.99    -0.0137          0          0 
+	   -0.0137       1.98          0          0 
+	         0          0          2          0 
+	         0          0          0       1.95 
+Central difference numeric hessian did not return correct answer
+P5:          9      -8.13      -6.78      -2.36 
+H_cen:
+	         2   -0.00342          0          0 
+	  -0.00342          2          0          0 
+	         0          0          2          0 
+	         0          0          0       1.97 
+Central difference upper triangular numeric hessian did not return correct answer
+P5:          9      -8.13      -6.78      -2.36 
+H_cen_u:
+	         2   -0.00342          0          0 
+	  -0.00342          2          0          0 
+	         0          0          2          0 
+	         0          0          0       1.97 
+Forward difference numeric hessian did not return correct answer
+P6:      -6.61       5.88      -3.86       6.46 
+H_fwd:
+	      1.99          0          0          0 
+	         0       2.01          0          0 
+	         0          0          2          0 
+	         0          0          0          2 
+Central difference numeric hessian did not return correct answer
+P6:      -6.61       5.88      -3.86       6.46 
+H_cen:
+	         2          0          0          0 
+	         0          2          0          0 
+	         0          0          2          0 
+	         0          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P6:      -6.61       5.88      -3.86       6.46 
+H_cen_u:
+	         2          0          0          0 
+	         0          2          0          0 
+	         0          0          2          0 
+	         0          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P7:       1.13       4.33       3.99      -9.73 
+H_fwd:
+	      1.94          0          0          0 
+	         0       1.99          0          0 
+	         0          0          2     0.0129 
+	         0          0     0.0129       2.01 
+Central difference numeric hessian did not return correct answer
+P7:       1.13       4.33       3.99      -9.73 
+H_cen:
+	      1.77     0.0256          0    -0.0114 
+	    0.0256       1.99          0   -0.00296 
+	         0          0          2    0.00322 
+	   -0.0114   -0.00296    0.00322          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P7:       1.13       4.33       3.99      -9.73 
+H_cen_u:
+	      1.77     0.0256          0    -0.0114 
+	    0.0256       1.99          0   -0.00296 
+	         0          0          2    0.00322 
+	   -0.0114   -0.00296    0.00322          2 
+Forward difference numeric hessian did not return correct answer
+P8:       6.13       7.17      -8.75      0.288 
+H_fwd:
+	         2    -0.0114          0          0 
+	   -0.0114          2   -0.00796          0 
+	         0   -0.00796          2          0 
+	         0          0          0        2.5 
+Central difference numeric hessian did not return correct answer
+P8:       6.13       7.17      -8.75      0.288 
+H_cen:
+	      2.01   -0.00284    0.00233          0 
+	  -0.00284          2   -0.00199          0 
+	   0.00233   -0.00199          2          0 
+	         0          0          0       2.13 
+Central difference upper triangular numeric hessian did not return correct answer
+P8:       6.13       7.17      -8.75      0.288 
+H_cen_u:
+	      2.01   -0.00284    0.00233          0 
+	  -0.00284          2   -0.00199          0 
+	   0.00233   -0.00199          2          0 
+	         0          0          0       2.13 
+Forward difference numeric hessian did not return correct answer
+P9:      -4.54       9.88       3.82 
+H_fwd:
+	         2     0.0111     0.0288 
+	    0.0111       2.01     0.0132 
+	    0.0288     0.0132       2.04 
+Central difference numeric hessian did not return correct answer
+P9:      -4.54       9.88       3.82 
+H_cen:
+	      1.99          0          0 
+	         0          2          0 
+	         0          0       1.99 
+Central difference upper triangular numeric hessian did not return correct answer
+P9:      -4.54       9.88       3.82 
+H_cen_u:
+	      1.99          0          0 
+	         0          2          0 
+	         0          0       1.99 
+Forward difference numeric hessian did not return correct answer
+P10:      -1.31       3.51       3.55 
+H_fwd:
+	      2.06          0     0.0134 
+	         0          2          0 
+	    0.0134          0          2 
+Central difference numeric hessian did not return correct answer
+P10:      -1.31       3.51       3.55 
+H_cen:
+	      1.99          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P10:      -1.31       3.51       3.55 
+H_cen_u:
+	      1.99          0          0 
+	         0          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P11:      -5.11      -2.93      0.525 
+H_fwd:
+	         2   -0.00835          0 
+	  -0.00835          2          0 
+	         0          0       2.13 
+Central difference numeric hessian did not return correct answer
+P11:      -5.11      -2.93      0.525 
+H_cen:
+	         2   -0.00209          0 
+	  -0.00209          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P11:      -5.11      -2.93      0.525 
+H_cen_u:
+	         2   -0.00209          0 
+	  -0.00209          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P12:      -3.07       3.83 
+H_fwd:
+	         2          0 
+	         0       2.01 
+Central difference numeric hessian did not return correct answer
+P12:      -3.07       3.83 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P12:      -3.07       3.83 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P13:      -6.89          9       -8.3 
+H_fwd:
+	      2.01    0.00806   -0.00874 
+	   0.00806       2.01    -0.0067 
+	  -0.00874    -0.0067       1.99 
+Central difference numeric hessian did not return correct answer
+P13:      -6.89          9       -8.3 
+H_cen:
+	         2          0   -0.00218 
+	         0          2   -0.00167 
+	  -0.00218   -0.00167          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P13:      -6.89          9       -8.3 
+H_cen_u:
+	         2          0   -0.00218 
+	         0          2   -0.00167 
+	  -0.00218   -0.00167          2 
+Forward difference numeric hessian did not return correct answer
+P14:     -0.239       2.78      -9.06      -7.58 
+H_fwd:
+	         1          0          0    -0.0659 
+	         0       2.01          0          0 
+	         0          0       2.01          0 
+	   -0.0659          0          0          2 
+Central difference numeric hessian did not return correct answer
+P14:     -0.239       2.78      -9.06      -7.58 
+H_cen:
+	      1.88     0.0899    -0.0138          0 
+	    0.0899       1.99   -0.00496    0.00593 
+	   -0.0138   -0.00496          2   -0.00182 
+	         0    0.00593   -0.00182          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P14:     -0.239       2.78      -9.06      -7.58 
+H_cen_u:
+	      1.88     0.0899    -0.0138          0 
+	    0.0899       1.99   -0.00496    0.00593 
+	   -0.0138   -0.00496          2   -0.00182 
+	         0    0.00593   -0.00182          2 
+Forward difference numeric hessian did not return correct answer
+P15:      -8.28      -3.76 
+H_fwd:
+	         2          0 
+	         0       1.99 
+Central difference numeric hessian did not return correct answer
+P15:      -8.28      -3.76 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P15:      -8.28      -3.76 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P16:      -3.87       9.96       7.52 
+H_fwd:
+	      2.01      0.013          0 
+	     0.013          2    0.00668 
+	         0    0.00668       2.01 
+Central difference numeric hessian did not return correct answer
+P16:      -3.87       9.96       7.52 
+H_cen:
+	      1.99          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P16:      -3.87       9.96       7.52 
+H_cen_u:
+	      1.99          0          0 
+	         0          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P17:       -5.6      -7.98      -6.42      -1.42 
+H_fwd:
+	      1.99          0    -0.0139          0 
+	         0       2.01          0          0 
+	   -0.0139          0       1.99          0 
+	         0          0          0       1.72 
+Central difference numeric hessian did not return correct answer
+P17:       -5.6      -7.98      -6.42      -1.42 
+H_cen:
+	         2          0   -0.00348          0 
+	         0          2          0          0 
+	  -0.00348          0          2          0 
+	         0          0          0       1.98 
+Central difference upper triangular numeric hessian did not return correct answer
+P17:       -5.6      -7.98      -6.42      -1.42 
+H_cen_u:
+	         2          0   -0.00348          0 
+	         0          2          0          0 
+	  -0.00348          0          2          0 
+	         0          0          0       1.98 
+Forward difference numeric hessian did not return correct answer
+P18:      -1.95       5.49       8.95      -7.55 
+H_fwd:
+	      1.93          0          0          0 
+	         0          2          0          0 
+	         0          0       1.99          0 
+	         0          0          0       1.99 
+Central difference numeric hessian did not return correct answer
+P18:      -1.95       5.49       8.95      -7.55 
+H_cen:
+	         2          0          0          0 
+	         0          2          0    0.00302 
+	         0          0          2    0.00185 
+	         0    0.00302    0.00185          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P18:      -1.95       5.49       8.95      -7.55 
+H_cen_u:
+	         2          0          0          0 
+	         0          2          0    0.00302 
+	         0          0          2    0.00185 
+	         0    0.00302    0.00185          2 
+Forward difference numeric hessian did not return correct answer
+P19:      -3.58      -8.75     -0.609 
+H_fwd:
+	      1.98          0          0 
+	         0       1.99          0 
+	         0          0          2 
+Central difference numeric hessian did not return correct answer
+P19:      -3.58      -8.75     -0.609 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P19:      -3.58      -8.75     -0.609 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P20:      -2.26       -2.6      -9.85 
+H_fwd:
+	         2    -0.0425          0 
+	   -0.0425       1.93   -0.00977 
+	         0   -0.00977          2 
+Central difference numeric hessian did not return correct answer
+P20:      -2.26       -2.6      -9.85 
+H_cen:
+	         2          0          0 
+	         0       2.01          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P20:      -2.26       -2.6      -9.85 
+H_cen_u:
+	         2          0          0 
+	         0       2.01          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P21:       6.73       7.13       5.47 
+H_fwd:
+	         2          0          0 
+	         0       1.98   -0.00641 
+	         0   -0.00641          2 
+Central difference numeric hessian did not return correct answer
+P21:       6.73       7.13       5.47 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P21:       6.73       7.13       5.47 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P22:      -9.47       7.73 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P22:      -9.47       7.73 
+H_cen:
+	         2   -0.00171 
+	  -0.00171          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P22:      -9.47       7.73 
+H_cen_u:
+	         2   -0.00171 
+	  -0.00171          2 
+Forward difference numeric hessian did not return correct answer
+P23:       7.46     -0.474 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P23:       7.46     -0.474 
+H_cen:
+	         2          0 
+	         0       2.03 
+Central difference upper triangular numeric hessian did not return correct answer
+P23:       7.46     -0.474 
+H_cen_u:
+	         2          0 
+	         0       2.03 
+Forward difference numeric hessian did not return correct answer
+P24:      -7.55      -7.47 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P24:      -7.55      -7.47 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P24:      -7.55      -7.47 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P25:       -0.5      -2.63       1.15 
+H_fwd:
+	         2    -0.0119    -0.0272 
+	   -0.0119          2    -0.0208 
+	   -0.0272    -0.0208       1.97 
+Central difference numeric hessian did not return correct answer
+P25:       -0.5      -2.63       1.15 
+H_cen:
+	      2.01   -0.00297          0 
+	  -0.00297          2   -0.00259 
+	         0   -0.00259       2.01 
+Central difference upper triangular numeric hessian did not return correct answer
+P25:       -0.5      -2.63       1.15 
+H_cen_u:
+	      2.01   -0.00297          0 
+	  -0.00297          2   -0.00259 
+	         0   -0.00259       2.01 
+Forward difference numeric hessian did not return correct answer
+P26:      -8.63      -6.65 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P26:      -8.63      -6.65 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P26:      -8.63      -6.65 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P27:      -1.22       5.06 
+H_fwd:
+	      2.01          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P27:      -1.22       5.06 
+H_cen:
+	      1.99          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P27:      -1.22       5.06 
+H_cen_u:
+	      1.99          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P28:      -7.25       7.02 
+H_fwd:
+	      1.99          0 
+	         0       2.01 
+Central difference numeric hessian did not return correct answer
+P28:      -7.25       7.02 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P28:      -7.25       7.02 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P29:      -3.64       9.68       3.03       7.09 
+H_fwd:
+	      2.04          0          0     0.0194 
+	         0          2          0          0 
+	         0          0       1.99          0 
+	    0.0194          0          0       2.01 
+Central difference numeric hessian did not return correct answer
+P29:      -3.64       9.68       3.03       7.09 
+H_cen:
+	      1.99          0          0    0.00484 
+	         0          2          0          0 
+	         0          0       1.99          0 
+	   0.00484          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P29:      -3.64       9.68       3.03       7.09 
+H_cen_u:
+	      1.99          0          0    0.00484 
+	         0          2          0          0 
+	         0          0       1.99          0 
+	   0.00484          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P30:       8.84      0.823       3.76      -6.77 
+H_fwd:
+	      1.99    -0.0566     -0.015          0 
+	   -0.0566        1.5     -0.133          0 
+	    -0.015     -0.133          2          0 
+	         0          0          0       2.01 
+Central difference numeric hessian did not return correct answer
+P30:       8.84      0.823       3.76      -6.77 
+H_cen:
+	         2          0          0          0 
+	         0          2          0    -0.0185 
+	         0          0       2.01    0.00491 
+	         0    -0.0185    0.00491          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P30:       8.84      0.823       3.76      -6.77 
+H_cen_u:
+	         2          0          0          0 
+	         0          2          0    -0.0185 
+	         0          0       2.01    0.00491 
+	         0    -0.0185    0.00491          2 
+Forward difference numeric hessian did not return correct answer
+P31:      -9.55      -7.37 
+H_fwd:
+	         2     0.0071 
+	    0.0071       2.01 
+Central difference numeric hessian did not return correct answer
+P31:      -9.55      -7.37 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P31:      -9.55      -7.37 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P32:      -4.15      -5.94 
+H_fwd:
+	      2.01          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P32:      -4.15      -5.94 
+H_cen:
+	         2    0.00127 
+	   0.00127          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P32:      -4.15      -5.94 
+H_cen_u:
+	         2    0.00127 
+	   0.00127          2 
+Forward difference numeric hessian did not return correct answer
+P33:       8.52     -0.523 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P33:       8.52     -0.523 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P33:       8.52     -0.523 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P34:       9.92      -7.58       6.92       3.88 
+H_fwd:
+	         2          0          0          0 
+	         0          2          0          0 
+	         0          0          2          0 
+	         0          0          0       1.99 
+Central difference numeric hessian did not return correct answer
+P34:       9.92      -7.58       6.92       3.88 
+H_cen:
+	         2          0   -0.00182          0 
+	         0          2   -0.00238          0 
+	  -0.00182   -0.00238          2          0 
+	         0          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P34:       9.92      -7.58       6.92       3.88 
+H_cen_u:
+	         2          0   -0.00182          0 
+	         0          2   -0.00238          0 
+	  -0.00182   -0.00238          2          0 
+	         0          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P35:      -8.92      -3.63      -5.95        4.9 
+H_fwd:
+	      2.01     0.0154    0.00943     0.0115 
+	    0.0154       2.06     0.0231     0.0281 
+	   0.00943     0.0231       2.01     0.0172 
+	    0.0115     0.0281     0.0172       2.02 
+Central difference numeric hessian did not return correct answer
+P35:      -8.92      -3.63      -5.95        4.9 
+H_cen:
+	         2          0    0.00236    0.00286 
+	         0       1.99          0          0 
+	   0.00236          0          2    0.00429 
+	   0.00286          0    0.00429          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P35:      -8.92      -3.63      -5.95        4.9 
+H_cen_u:
+	         2          0    0.00236    0.00286 
+	         0       1.99          0          0 
+	   0.00236          0          2    0.00429 
+	   0.00286          0    0.00429          2 
+Forward difference numeric hessian did not return correct answer
+P36:      -8.33       3.62 
+H_fwd:
+	      2.01          0 
+	         0       2.01 
+Central difference numeric hessian did not return correct answer
+P36:      -8.33       3.62 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P36:      -8.33       3.62 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P37:      -5.25      -9.39       1.36 
+H_fwd:
+	         2          0          0 
+	         0          2          0 
+	         0          0        1.9 
+Central difference numeric hessian did not return correct answer
+P37:      -5.25      -9.39       1.36 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0       1.98 
+Central difference upper triangular numeric hessian did not return correct answer
+P37:      -5.25      -9.39       1.36 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0       1.98 
+Forward difference numeric hessian did not return correct answer
+P38:      -5.57       2.43 
+H_fwd:
+	         2          0 
+	         0       2.01 
+Central difference numeric hessian did not return correct answer
+P38:      -5.57       2.43 
+H_cen:
+	         2   -0.00231 
+	  -0.00231          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P38:      -5.57       2.43 
+H_cen_u:
+	         2   -0.00231 
+	  -0.00231          2 
+Forward difference numeric hessian did not return correct answer
+P39:      -6.39       1.71       3.66 
+H_fwd:
+	      2.01          0          0 
+	         0       1.97          0 
+	         0          0          2 
+Central difference numeric hessian did not return correct answer
+P39:      -6.39       1.71       3.66 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P39:      -6.39       1.71       3.66 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P40:      -3.01      0.698 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P40:      -3.01      0.698 
+H_cen:
+	         2          0 
+	         0       2.01 
+Central difference upper triangular numeric hessian did not return correct answer
+P40:      -3.01      0.698 
+H_cen_u:
+	         2          0 
+	         0       2.01 
+Forward difference numeric hessian did not return correct answer
+P41:       9.88        7.5 
+H_fwd:
+	         2    0.00675 
+	   0.00675       1.99 
+Central difference numeric hessian did not return correct answer
+P41:       9.88        7.5 
+H_cen:
+	         2    0.00338 
+	   0.00338          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P41:       9.88        7.5 
+H_cen_u:
+	         2    0.00338 
+	   0.00338          2 
+Forward difference numeric hessian did not return correct answer
+P42:      -2.88       6.54 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P42:      -2.88       6.54 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P42:      -2.88       6.54 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P43:      -3.76        7.1        7.5     -0.557 
+H_fwd:
+	      1.99   -0.00937          0          0 
+	  -0.00937          2          0          0 
+	         0          0          2          0 
+	         0          0          0       2.25 
+Central difference numeric hessian did not return correct answer
+P43:      -3.76        7.1        7.5     -0.557 
+H_cen:
+	         2          0          0          0 
+	         0          2          0          0 
+	         0          0          2          0 
+	         0          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P43:      -3.76        7.1        7.5     -0.557 
+H_cen_u:
+	         2          0          0          0 
+	         0          2          0          0 
+	         0          0          2          0 
+	         0          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P44:       4.78       6.01 
+H_fwd:
+	      1.99          0 
+	         0       2.01 
+Central difference numeric hessian did not return correct answer
+P44:       4.78       6.01 
+H_cen:
+	         2   -0.00109 
+	  -0.00109          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P44:       4.78       6.01 
+H_cen_u:
+	         2   -0.00109 
+	  -0.00109          2 
+Forward difference numeric hessian did not return correct answer
+P45:       4.78       5.93      0.174 
+H_fwd:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference numeric hessian did not return correct answer
+P45:       4.78       5.93      0.174 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0       1.97 
+Central difference upper triangular numeric hessian did not return correct answer
+P45:       4.78       5.93      0.174 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0       1.97 
+Forward difference numeric hessian did not return correct answer
+P46:      -3.23      -2.28 
+H_fwd:
+	      1.99   -0.00425 
+	  -0.00425          2 
+Central difference numeric hessian did not return correct answer
+P46:      -3.23      -2.28 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P46:      -3.23      -2.28 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P47:      -9.12       4.49       9.22       7.23 
+H_fwd:
+	         2          0          0          0 
+	         0       2.02     0.0121          0 
+	         0     0.0121       2.01          0 
+	         0          0          0          2 
+Central difference numeric hessian did not return correct answer
+P47:      -9.12       4.49       9.22       7.23 
+H_cen:
+	         2   -0.00305   -0.00149          0 
+	  -0.00305          2    0.00302   -0.00385 
+	  -0.00149    0.00302          2          0 
+	         0   -0.00385          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P47:      -9.12       4.49       9.22       7.23 
+H_cen_u:
+	         2   -0.00305   -0.00149          0 
+	  -0.00305          2    0.00302   -0.00385 
+	  -0.00149    0.00302          2          0 
+	         0   -0.00385          0          2 
+Forward difference numeric hessian did not return correct answer
+P48:       7.45       2.89 
+H_fwd:
+	         2    -0.0058 
+	   -0.0058       1.99 
+Central difference numeric hessian did not return correct answer
+P48:       7.45       2.89 
+H_cen:
+	         2    0.00145 
+	   0.00145          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P48:       7.45       2.89 
+H_cen_u:
+	         2    0.00145 
+	   0.00145          2 
+Forward difference numeric hessian did not return correct answer
+P49:      -1.23      0.645      -3.11 
+H_fwd:
+	      2.01          0          0 
+	         0       1.97          0 
+	         0          0          2 
+Central difference numeric hessian did not return correct answer
+P49:      -1.23      0.645      -3.11 
+H_cen:
+	         2          0          0 
+	         0          2    0.00251 
+	         0    0.00251          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P49:      -1.23      0.645      -3.11 
+H_cen_u:
+	         2          0          0 
+	         0          2    0.00251 
+	         0    0.00251          2 
+Forward difference numeric hessian did not return correct answer
+P50:       7.59      -3.51      -3.45 
+H_fwd:
+	         2          0          0 
+	         0          2          0 
+	         0          0       2.02 
+Central difference numeric hessian did not return correct answer
+P50:       7.59      -3.51      -3.45 
+H_cen:
+	         2          0          0 
+	         0          2    0.00517 
+	         0    0.00517       1.99 
+Central difference upper triangular numeric hessian did not return correct answer
+P50:       7.59      -3.51      -3.45 
+H_cen_u:
+	         2          0          0 
+	         0          2    0.00517 
+	         0    0.00517       1.99 
+Forward difference numeric hessian did not return correct answer
+P51:       6.46      -4.87       9.58      -3.52 
+H_fwd:
+	         2    -0.0159          0          0 
+	   -0.0159       1.99          0          0 
+	         0          0       2.01          0 
+	         0          0          0          2 
+Central difference numeric hessian did not return correct answer
+P51:       6.46      -4.87       9.58      -3.52 
+H_cen:
+	         2          0          0          0 
+	         0          2          0          0 
+	         0          0          2          0 
+	         0          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P51:       6.46      -4.87       9.58      -3.52 
+H_cen_u:
+	         2          0          0          0 
+	         0          2          0          0 
+	         0          0          2          0 
+	         0          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P52:      -6.89      -8.08       9.03 
+H_fwd:
+	         2          0          0 
+	         0          2          0 
+	         0          0       2.01 
+Central difference numeric hessian did not return correct answer
+P52:      -6.89      -8.08       9.03 
+H_cen:
+	         2          0    0.00201 
+	         0          2    0.00171 
+	   0.00201    0.00171          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P52:      -6.89      -8.08       9.03 
+H_cen_u:
+	         2          0    0.00201 
+	         0          2    0.00171 
+	   0.00201    0.00171          2 
+Forward difference numeric hessian did not return correct answer
+P53:       6.43      -5.59      -1.17 
+H_fwd:
+	      1.99          0          0 
+	         0       1.99          0 
+	         0          0        2.2 
+Central difference numeric hessian did not return correct answer
+P53:       6.43      -5.59      -1.17 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0       1.96 
+Central difference upper triangular numeric hessian did not return correct answer
+P53:       6.43      -5.59      -1.17 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0       1.96 
+Forward difference numeric hessian did not return correct answer
+P54:      -6.52      -5.28      -9.78      -7.02 
+H_fwd:
+	      1.99          0          0          0 
+	         0       2.02    0.00968          0 
+	         0    0.00968       2.01          0 
+	         0          0          0          2 
+Central difference numeric hessian did not return correct answer
+P54:      -6.52      -5.28      -9.78      -7.02 
+H_cen:
+	         2   -0.00363   -0.00196          0 
+	  -0.00363          2    0.00242          0 
+	  -0.00196    0.00242          2          0 
+	         0          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P54:      -6.52      -5.28      -9.78      -7.02 
+H_cen_u:
+	         2   -0.00363   -0.00196          0 
+	  -0.00363          2    0.00242          0 
+	  -0.00196    0.00242          2          0 
+	         0          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P55:       8.99      -6.99 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P55:       8.99      -6.99 
+H_cen:
+	         2    0.00199 
+	   0.00199          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P55:       8.99      -6.99 
+H_cen_u:
+	         2    0.00199 
+	   0.00199          2 
+Forward difference numeric hessian did not return correct answer
+P56:     -0.104      0.455 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P56:     -0.104      0.455 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P56:     -0.104      0.455 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P57:       3.35       -1.1      -1.27        8.8 
+H_fwd:
+	      1.98          0    -0.0586          0 
+	         0       1.91          0          0 
+	   -0.0586          0       1.87          0 
+	         0          0          0       2.01 
+Central difference numeric hessian did not return correct answer
+P57:       3.35       -1.1      -1.27        8.8 
+H_cen:
+	         2     0.0169    -0.0147          0 
+	    0.0169       2.01     0.0446          0 
+	   -0.0147     0.0446       2.01          0 
+	         0          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P57:       3.35       -1.1      -1.27        8.8 
+H_cen_u:
+	         2     0.0169    -0.0147          0 
+	    0.0169       2.01     0.0446          0 
+	   -0.0147     0.0446       2.01          0 
+	         0          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P58:      -2.76       8.42      -8.87      -1.77 
+H_fwd:
+	      1.93          0    -0.0204          0 
+	         0       1.99   -0.00669          0 
+	   -0.0204   -0.00669          2          0 
+	         0          0          0       2.15 
+Central difference numeric hessian did not return correct answer
+P58:      -2.76       8.42      -8.87      -1.77 
+H_cen:
+	      2.03          0          0          0 
+	         0          2          0          0 
+	         0          0          2          0 
+	         0          0          0       2.04 
+Central difference upper triangular numeric hessian did not return correct answer
+P58:      -2.76       8.42      -8.87      -1.77 
+H_cen_u:
+	      2.03          0          0          0 
+	         0          2          0          0 
+	         0          0          2          0 
+	         0          0          0       2.04 
+Forward difference numeric hessian did not return correct answer
+P59:       3.71       6.42 
+H_fwd:
+	      1.98          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P59:       3.71       6.42 
+H_cen:
+	         2    0.00131 
+	   0.00131          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P59:       3.71       6.42 
+H_cen_u:
+	         2    0.00131 
+	   0.00131          2 
+Forward difference numeric hessian did not return correct answer
+P60:      -8.76      0.223       7.77 
+H_fwd:
+	      1.99    -0.0571          0 
+	   -0.0571        1.5     0.0643 
+	         0     0.0643       2.01 
+Central difference numeric hessian did not return correct answer
+P60:      -8.76      0.223       7.77 
+H_cen:
+	         2          0   -0.00184 
+	         0          2     0.0161 
+	  -0.00184     0.0161          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P60:      -8.76      0.223       7.77 
+H_cen_u:
+	         2          0   -0.00184 
+	         0          2     0.0161 
+	  -0.00184     0.0161          2 
+Forward difference numeric hessian did not return correct answer
+P61:      -9.81      -2.42     -0.342 
+H_fwd:
+	         2          0          0 
+	         0       1.95          0 
+	         0          0          2 
+Central difference numeric hessian did not return correct answer
+P61:      -9.81      -2.42     -0.342 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P61:      -9.81      -2.42     -0.342 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P62:      -5.94       2.42      -4.72 
+H_fwd:
+	         2          0   -0.00446 
+	         0       2.01    -0.0109 
+	  -0.00446    -0.0109          2 
+Central difference numeric hessian did not return correct answer
+P62:      -5.94       2.42      -4.72 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P62:      -5.94       2.42      -4.72 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P63:      -3.32      -5.43 
+H_fwd:
+	      1.98          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P63:      -3.32      -5.43 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P63:      -3.32      -5.43 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P64:       -2.5      -6.45       1.73 
+H_fwd:
+	      1.99          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference numeric hessian did not return correct answer
+P64:       -2.5      -6.45       1.73 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0       1.99 
+Central difference upper triangular numeric hessian did not return correct answer
+P64:       -2.5      -6.45       1.73 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0       1.99 
+Forward difference numeric hessian did not return correct answer
+P65:       4.68         -7 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P65:       4.68         -7 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P65:       4.68         -7 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P66:       8.75       4.38      -6.88 
+H_fwd:
+	         2          0          0 
+	         0       2.01          0 
+	         0          0       1.99 
+Central difference numeric hessian did not return correct answer
+P66:       8.75       4.38      -6.88 
+H_cen:
+	         2   -0.00326          0 
+	  -0.00326       2.02          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P66:       8.75       4.38      -6.88 
+H_cen_u:
+	         2   -0.00326          0 
+	  -0.00326       2.02          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P67:      -7.58       8.01 
+H_fwd:
+	      2.01          0 
+	         0       2.01 
+Central difference numeric hessian did not return correct answer
+P67:      -7.58       8.01 
+H_cen:
+	         2   -0.00103 
+	  -0.00103          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P67:      -7.58       8.01 
+H_cen_u:
+	         2   -0.00103 
+	  -0.00103          2 
+Forward difference numeric hessian did not return correct answer
+P68:       -9.4       3.56 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P68:       -9.4       3.56 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P68:       -9.4       3.56 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P69:       -1.7       3.03      -8.27 
+H_fwd:
+	      2.05     0.0484          0 
+	    0.0484       2.02          0 
+	         0          0          2 
+Central difference numeric hessian did not return correct answer
+P69:       -1.7       3.03      -8.27 
+H_cen:
+	      2.01     0.0121          0 
+	    0.0121          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P69:       -1.7       3.03      -8.27 
+H_cen_u:
+	      2.01     0.0121          0 
+	    0.0121          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P70:      -8.78      0.435      -8.22      -7.68 
+H_fwd:
+	      2.01     0.0569    0.00693          0 
+	    0.0569        2.5      0.122          0 
+	   0.00693      0.122       2.01          0 
+	         0          0          0       2.01 
+Central difference numeric hessian did not return correct answer
+P70:      -8.78      0.435      -8.22      -7.68 
+H_cen:
+	         2          0          0          0 
+	         0       1.88          0          0 
+	         0          0          2          0 
+	         0          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P70:      -8.78      0.435      -8.22      -7.68 
+H_cen_u:
+	         2          0          0          0 
+	         0       1.88          0          0 
+	         0          0          2          0 
+	         0          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P71:      -6.47     -0.708 
+H_fwd:
+	         2          0 
+	         0       2.13 
+Central difference numeric hessian did not return correct answer
+P71:      -6.47     -0.708 
+H_cen:
+	         2          0 
+	         0       2.03 
+Central difference upper triangular numeric hessian did not return correct answer
+P71:      -6.47     -0.708 
+H_cen_u:
+	         2          0 
+	         0       2.03 
+Forward difference numeric hessian did not return correct answer
+P72:      -6.56       2.87       2.23      -7.34 
+H_fwd:
+	      1.99          0          0          0 
+	         0       2.03          0          0 
+	         0          0       2.01          0 
+	         0          0          0          2 
+Central difference numeric hessian did not return correct answer
+P72:      -6.56       2.87       2.23      -7.34 
+H_cen:
+	         2          0          0     0.0013 
+	         0       2.01          0          0 
+	         0          0          2          0 
+	    0.0013          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P72:      -6.56       2.87       2.23      -7.34 
+H_cen_u:
+	         2          0          0     0.0013 
+	         0       2.01          0          0 
+	         0          0          2          0 
+	    0.0013          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P73:       3.63      -5.32 
+H_fwd:
+	      2.01          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P73:       3.63      -5.32 
+H_cen:
+	         2    0.00162 
+	   0.00162          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P73:       3.63      -5.32 
+H_cen_u:
+	         2    0.00162 
+	   0.00162          2 
+Forward difference numeric hessian did not return correct answer
+P74:      -2.86      -8.25      -5.82 
+H_fwd:
+	      1.98          0      0.015 
+	         0          2          0 
+	     0.015          0       2.01 
+Central difference numeric hessian did not return correct answer
+P74:      -2.86      -8.25      -5.82 
+H_cen:
+	         2          0    0.00376 
+	         0          2          0 
+	   0.00376          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P74:      -2.86      -8.25      -5.82 
+H_cen_u:
+	         2          0    0.00376 
+	         0          2          0 
+	   0.00376          0          2 
+Forward difference numeric hessian did not return correct answer
+P75:       1.47      -6.61      -0.55 
+H_fwd:
+	      1.98          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference numeric hessian did not return correct answer
+P75:       1.47      -6.61      -0.55 
+H_cen:
+	      2.01          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P75:       1.47      -6.61      -0.55 
+H_cen_u:
+	      2.01          0          0 
+	         0          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P76:      -4.84       1.65 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P76:      -4.84       1.65 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P76:      -4.84       1.65 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P77:      -6.54       8.86       5.51 
+H_fwd:
+	      2.01          0          0 
+	         0          2    -0.0102 
+	         0    -0.0102          2 
+Central difference numeric hessian did not return correct answer
+P77:      -6.54       8.86       5.51 
+H_cen:
+	         2          0   -0.00347 
+	         0          2   -0.00256 
+	  -0.00347   -0.00256          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P77:      -6.54       8.86       5.51 
+H_cen_u:
+	         2          0   -0.00347 
+	         0          2   -0.00256 
+	  -0.00347   -0.00256          2 
+Forward difference numeric hessian did not return correct answer
+P78:       3.64      -7.16       6.57      -3.72 
+H_fwd:
+	         2          0          0          0 
+	         0          2          0          0 
+	         0          0       1.99          0 
+	         0          0          0       2.01 
+Central difference numeric hessian did not return correct answer
+P78:       3.64      -7.16       6.57      -3.72 
+H_cen:
+	      2.01          0          0          0 
+	         0          2          0          0 
+	         0          0          2          0 
+	         0          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P78:       3.64      -7.16       6.57      -3.72 
+H_cen_u:
+	      2.01          0          0          0 
+	         0          2          0          0 
+	         0          0          2          0 
+	         0          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P79:    -0.0488      -5.75       3.88 
+H_fwd:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference numeric hessian did not return correct answer
+P79:    -0.0488      -5.75       3.88 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P79:    -0.0488      -5.75       3.88 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P80:      -6.16      -7.73      0.939      0.248 
+H_fwd:
+	         2          0          0          0 
+	         0          2          0          0 
+	         0          0       2.25          0 
+	         0          0          0       2.25 
+Central difference numeric hessian did not return correct answer
+P80:      -6.16      -7.73      0.939      0.248 
+H_cen:
+	         2          0          0          0 
+	         0          2          0          0 
+	         0          0       1.94          0 
+	         0          0          0       1.94 
+Central difference upper triangular numeric hessian did not return correct answer
+P80:      -6.16      -7.73      0.939      0.248 
+H_cen_u:
+	         2          0          0          0 
+	         0          2          0          0 
+	         0          0       1.94          0 
+	         0          0          0       1.94 
+Forward difference numeric hessian did not return correct answer
+P81:       9.75       1.56     -0.349 
+H_fwd:
+	         2          0          0 
+	         0       1.99          0 
+	         0          0          2 
+Central difference numeric hessian did not return correct answer
+P81:       9.75       1.56     -0.349 
+H_cen:
+	         2          0          0 
+	         0       2.02          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P81:       9.75       1.56     -0.349 
+H_cen_u:
+	         2          0          0 
+	         0       2.02          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P82:      -6.93      -7.37      -3.45      -1.15 
+H_fwd:
+	      1.99          0    -0.0105          0 
+	         0       2.01          0          0 
+	   -0.0105          0       1.97          0 
+	         0          0          0       2.17 
+Central difference numeric hessian did not return correct answer
+P82:      -6.93      -7.37      -3.45      -1.15 
+H_cen:
+	         2    0.00245          0          0 
+	   0.00245          2          0          0 
+	         0          0          2          0 
+	         0          0          0       1.94 
+Central difference upper triangular numeric hessian did not return correct answer
+P82:      -6.93      -7.37      -3.45      -1.15 
+H_cen_u:
+	         2    0.00245          0          0 
+	   0.00245          2          0          0 
+	         0          0          2          0 
+	         0          0          0       1.94 
+Forward difference numeric hessian did not return correct answer
+P83:      -6.07       7.83      -9.01      -8.28 
+H_fwd:
+	      2.01          0          0    0.00994 
+	         0       1.99          0    0.00771 
+	         0          0       2.01     0.0067 
+	   0.00994    0.00771     0.0067       2.01 
+Central difference numeric hessian did not return correct answer
+P83:      -6.07       7.83      -9.01      -8.28 
+H_cen:
+	         2          0   -0.00228          0 
+	         0          2          0          0 
+	  -0.00228          0          2          0 
+	         0          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P83:      -6.07       7.83      -9.01      -8.28 
+H_cen_u:
+	         2          0   -0.00228          0 
+	         0          2          0          0 
+	  -0.00228          0          2          0 
+	         0          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P84:     -0.851       3.77      -4.17       7.62 
+H_fwd:
+	      2.25     0.0664       0.06          0 
+	    0.0664       2.02     0.0159          0 
+	      0.06     0.0159       2.03    0.00787 
+	         0          0    0.00787          2 
+Central difference numeric hessian did not return correct answer
+P84:     -0.851       3.77      -4.17       7.62 
+H_cen:
+	      1.94     0.0166      0.015    -0.0082 
+	    0.0166          2          0          0 
+	     0.015          0       1.99          0 
+	   -0.0082          0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P84:     -0.851       3.77      -4.17       7.62 
+H_cen_u:
+	      1.94     0.0166      0.015    -0.0082 
+	    0.0166          2          0          0 
+	     0.015          0       1.99          0 
+	   -0.0082          0          0          2 
+Forward difference numeric hessian did not return correct answer
+P85:       5.25       8.59       9.83 
+H_fwd:
+	         2          0     0.0097 
+	         0          2    0.00592 
+	    0.0097    0.00592       2.01 
+Central difference numeric hessian did not return correct answer
+P85:       5.25       8.59       9.83 
+H_cen:
+	         2          0    0.00242 
+	         0          2          0 
+	   0.00242          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P85:       5.25       8.59       9.83 
+H_cen_u:
+	         2          0    0.00242 
+	         0          2          0 
+	   0.00242          0          2 
+Forward difference numeric hessian did not return correct answer
+P86:      -2.65       1.57      -9.46 
+H_fwd:
+	      1.95    -0.0601    -0.0199 
+	   -0.0601       1.96    -0.0168 
+	   -0.0199    -0.0168          2 
+Central difference numeric hessian did not return correct answer
+P86:      -2.65       1.57      -9.46 
+H_cen:
+	      2.01          0   -0.00249 
+	         0       2.03          0 
+	  -0.00249          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P86:      -2.65       1.57      -9.46 
+H_cen_u:
+	      2.01          0   -0.00249 
+	         0       2.03          0 
+	  -0.00249          0          2 
+Forward difference numeric hessian did not return correct answer
+P87:      -2.13      -5.29 
+H_fwd:
+	      1.98          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P87:      -2.13      -5.29 
+H_cen:
+	      2.01    0.00277 
+	   0.00277          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P87:      -2.13      -5.29 
+H_cen_u:
+	      2.01    0.00277 
+	   0.00277          2 
+Forward difference numeric hessian did not return correct answer
+P88:     -0.802       2.45 
+H_fwd:
+	         2          0 
+	         0       2.01 
+Central difference numeric hessian did not return correct answer
+P88:     -0.802       2.45 
+H_cen:
+	         2   -0.00159 
+	  -0.00159          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P88:     -0.802       2.45 
+H_cen_u:
+	         2   -0.00159 
+	  -0.00159          2 
+Forward difference numeric hessian did not return correct answer
+P89:       2.17      -4.59      -9.92      -9.88 
+H_fwd:
+	      2.02    -0.0501    -0.0232          0 
+	   -0.0501       1.98          0          0 
+	   -0.0232          0       1.99    -0.0051 
+	         0          0    -0.0051          2 
+Central difference numeric hessian did not return correct answer
+P89:       2.17      -4.59      -9.92      -9.88 
+H_cen:
+	      1.98     -0.025    -0.0058          0 
+	    -0.025          2          0   -0.00275 
+	   -0.0058          0          2   -0.00128 
+	         0   -0.00275   -0.00128          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P89:       2.17      -4.59      -9.92      -9.88 
+H_cen_u:
+	      1.98     -0.025    -0.0058          0 
+	    -0.025          2          0   -0.00275 
+	   -0.0058          0          2   -0.00128 
+	         0   -0.00275   -0.00128          2 
+Forward difference numeric hessian did not return correct answer
+P90:       5.78       2.88       1.08 
+H_fwd:
+	         2          0          0 
+	         0       2.02          0 
+	         0          0          2 
+Central difference numeric hessian did not return correct answer
+P90:       5.78       2.88       1.08 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0       1.97 
+Central difference upper triangular numeric hessian did not return correct answer
+P90:       5.78       2.88       1.08 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0       1.97 
+Forward difference numeric hessian did not return correct answer
+P91:     -0.786       2.65 
+H_fwd:
+	      2.02          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P91:     -0.786       2.65 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P91:     -0.786       2.65 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P92:       2.13      -1.76      -2.91 
+H_fwd:
+	      1.99    -0.0166    -0.0101 
+	   -0.0166       1.99          0 
+	   -0.0101          0          2 
+Central difference numeric hessian did not return correct answer
+P92:       2.13      -1.76      -2.91 
+H_cen:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P92:       2.13      -1.76      -2.91 
+H_cen_u:
+	         2          0          0 
+	         0          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P93:       -4.3       8.01 
+H_fwd:
+	         2          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P93:       -4.3       8.01 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P93:       -4.3       8.01 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P94:      -6.99          5 
+H_fwd:
+	         2          0 
+	         0       1.99 
+Central difference numeric hessian did not return correct answer
+P94:      -6.99          5 
+H_cen:
+	         2    0.00357 
+	   0.00357          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P94:      -6.99          5 
+H_cen_u:
+	         2    0.00357 
+	   0.00357          2 
+Forward difference numeric hessian did not return correct answer
+P95:       9.92      -8.31       -7.7 
+H_fwd:
+	         2          0          0 
+	         0          2          0 
+	         0          0       2.01 
+Central difference numeric hessian did not return correct answer
+P95:       9.92      -8.31       -7.7 
+H_cen:
+	         2    0.00152          0 
+	   0.00152          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P95:       9.92      -8.31       -7.7 
+H_cen_u:
+	         2    0.00152          0 
+	   0.00152          2          0 
+	         0          0          2 
+Forward difference numeric hessian did not return correct answer
+P96:      -7.46       9.73 
+H_fwd:
+	      1.99          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P96:      -7.46       9.73 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P96:      -7.46       9.73 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P97:      -5.86     -0.652       4.73      -4.62 
+H_fwd:
+	      2.01          0    0.00902    0.00923 
+	         0          2          0          0 
+	   0.00902          0       2.02          0 
+	   0.00923          0          0          2 
+Central difference numeric hessian did not return correct answer
+P97:      -5.86     -0.652       4.73      -4.62 
+H_cen:
+	         2          0          0          0 
+	         0          2          0     0.0135 
+	         0          0          2          0 
+	         0     0.0135          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P97:      -5.86     -0.652       4.73      -4.62 
+H_cen_u:
+	         2          0          0          0 
+	         0          2          0     0.0135 
+	         0          0          2          0 
+	         0     0.0135          0          2 
+Forward difference numeric hessian did not return correct answer
+P98:     -0.459       1.75 
+H_fwd:
+	      2.01          0 
+	         0          2 
+Central difference numeric hessian did not return correct answer
+P98:     -0.459       1.75 
+H_cen:
+	         2          0 
+	         0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P98:     -0.459       1.75 
+H_cen_u:
+	         2          0 
+	         0          2 
+Forward difference numeric hessian did not return correct answer
+P99:       3.65       8.28      -8.16 
+H_fwd:
+	      1.98     0.0165    -0.0168 
+	    0.0165       2.01          0 
+	   -0.0168          0       1.98 
+Central difference numeric hessian did not return correct answer
+P99:       3.65       8.28      -8.16 
+H_cen:
+	      2.01          0          0 
+	         0          2          0 
+	         0          0          2 
+Central difference upper triangular numeric hessian did not return correct answer
+P99:       3.65       8.28      -8.16 
+H_cen_u:
+	      2.01          0          0 
+	         0          2          0 
+	         0          0          2 
+Unless noted all 1000 cases passed.

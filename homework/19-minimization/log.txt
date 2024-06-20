@@ -1,0 +1,28 @@
+Makefile:27: warning: overriding recipe for target 'minimize.dll'
+../preamble.mk:12: warning: ignoring old recipe for target 'minimize.dll'
+Makefile:29: warning: overriding recipe for target 'qrgs.dll'
+../preamble.mk:14: warning: ignoring old recipe for target 'qrgs.dll'
+Makefile:31: warning: overriding recipe for target 'genlist.dll'
+../preamble.mk:16: warning: ignoring old recipe for target 'genlist.dll'
+Simplex points:
+	f(10, ) = 100
+	f(11, ) = 121
+p_ce = (10.5, )
+size = 0.5
+it1f(p_1)>f(p_re)=100
+re1
+
+Simplex points:
+	f(10, ) = 100
+	f(10, ) = 100
+p_ce = (10, )
+size = 0
+Minimization terminated after 1 iterations. 
+Final simplex centroid at (10, ), with size 0
+Final State:
+
+Simplex points:
+	f(10, ) = 100
+	f(10, ) = 100
+p_ce = (10, )
+size = 0

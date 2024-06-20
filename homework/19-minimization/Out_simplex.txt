@@ -1,0 +1,12 @@
+Testing minimization of a parabolic function f(x) = |x|², starting guess (13, 20, )
+	We expect minima at (0).
+	Found minima at (-1.54507726153197E-16, -2.26747381114307E-16, )
+Testing minimization of the rosenbrock function, starting guess (0.8, 0.8, )
+	We expect minima at (1,1).
+	Found minima at (1, 1, )
+Testing minimization of the himmelblau function, 20 randomized starting points in [-6,6]x[-6,6]
+	We expect four distinct minima.
+	Found extrema at (-3.77931025337775, -3.28318599128617, ), f(x) = 0.000
+	Found extrema at (-2.80511808695275, 3.13131251825057, ), f(x) = 0.000
+	Found extrema at (3.58442834033049, -1.8481265269644, ), f(x) = 0.000
+	Found extrema at (3, 2, ), f(x) = 0.000
