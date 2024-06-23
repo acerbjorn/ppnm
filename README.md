@@ -36,7 +36,7 @@ Repository for praktisk programmering og nummeriske metoder
 
 ### Homework
 
-Haven't been counted up yet.
+Haven't been totally counted up yet.
 
  ======================================
 | #  | homework      | A | B | C | Σ   |
@@ -45,9 +45,17 @@ Haven't been counted up yet.
 ---------------------------------------
 | 2  | EVD           | 6 | - | - |  6  |
 ---------------------------------------
-| 3  | LeastSquares  | 6 | 3 | - |  9  |
+| 3  | LeastSquares  | 6 | 3 | 1 | 10  |
 ---------------------------------------
-|              ...                     |
+| 4  | Splines       | 6 | - | - |  6  |
+---------------------------------------
+| 5  | ODE           | 6 | 3 | - |  9	 |
+---------------------------------------
+| 6  | Integration   | - | - | - |  0	 |
+---------------------------------------
+| 7  | Monte Carlo   | - | - | - |  0	 |
+---------------------------------------
+| 7  | Minimization  | 6 | 3 | 1 | 10	 |
  ======================================
 |                    total points:     |
  ======================================
@@ -57,5 +65,6 @@ Haven't been counted up yet.
 - [ ] Check that make clean works correctly
   - [ ] Using $(RM)
   - [ ] Removes all compilation artifacts
+  - [ ] Better name for ode class
   
 
