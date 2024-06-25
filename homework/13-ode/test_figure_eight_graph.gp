@@ -5,6 +5,7 @@ set yrange[-2:2]
 set isotropic
 
 plot \
-	"test_figure_eight_out.txt" using 1:2 with lines title "circular",\
-	# "test_figure_eight_out.txt" using 3:4 with lines title "elliptic",\
-	# "test_figure_eight_out.txt" using 5:6 with lines title "relativistic + elliptic"
+	"test_figure_eight_out.txt" using 1:($2+1) with lines title "O_1 (shifted up by 1)",\
+	"test_figure_eight_out.txt" using 3:4 with lines title      "O_2                  ",\
+	"test_figure_eight_out.txt" using 5:($6-1) with lines title "O_3 (shifted down by 1)"
+	# "test_figure_eight_out.txt" using (sqrt(($1-$3)**2 + ($2-$4)**2)) with lines title "distance between o_1 and o_2",\
