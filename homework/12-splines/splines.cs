@@ -50,20 +50,56 @@ public static class spline {
     }
 }
 
-class qspline {
+public class qspline {
     vector x, y, b, c;
     public qspline(vector xs, vector ys) {
         x = xs.copy(); y = ys.copy();
-        b = new vector(3);
-        c = new vector(3);        
+        b = linear_segments(xs,ys);
+        c = (forward_iteration(xs,ys,b)+backward_iteration(xs,ys,b))/2;
+    }
+    public static vector linear_segments(vector x, vector y) {
+        vector p = new vector(x.size-1);
+        for (int i = 0; i<p.size; i++) {
+            p[i] = (y[i+1]-y[i])/(x[i+1]-x[i]);
+        }
+        return p;
+    }
+    public static vector forward_iteration(vector x, vector y, vector p) {
+        vector c_f = new vector(p.size);
+        for (int i = 1; i<c_f.size; i++) {
+            double dx_f = x[i+1]-x[i];
+            double dx_b = x[i]-x[i-1];
+            c_f[i] = (p[i]-p[i-1]-c_f[i-1]*dx_b)/dx_f;
+        }
+        return c_f;
+    }
+    public static vector backward_iteration(vector x, vector y, vector p) {
+        vector c_b = new vector(p.size);
+        for (int i = c_b.size-2; i>=0; i--) {
+            double dx_f = x[i+2]-x[i+1];
+            double dx_b = x[i+1]-x[i];
+            c_b[i] = (p[i+1]-p[i]-c_b[i+1]*dx_f)/dx_b;
+        }
+        return c_b;
     }
     public double evaluate(double z){/* evaluate the spline */
-        return 0; 
+        int i = binsearch(x,z);
+        return y[i]+(z-x[i])*(b[i]+c[i]*(z-x[i+1]));
     }
 	public double derivative(double z){/* evaluate the derivative */
         return 0;
     }
 	public double integral(double z){/* evaluate the integral */
         return 0;
+    }
+    static int binsearch(double[] x, double x_new) {
+        int range_start = 0; int range_end = x.Length-1;
+        while (range_end-range_start>1) {
+            int range_mid_point = (range_end+range_start)/2;
+            if (x[range_mid_point] <= x_new) range_start = range_mid_point;
+            else if (x[range_mid_point] > x_new) range_end = range_mid_point; 
+            else throw new ArgumentException($"Unable to compare new point to point {range_mid_point} in array. Is either nan?\n x[{range_mid_point}]: {x[range_mid_point]}, new point: {x_new}.");
+        }
+        return range_start;
     }
 }
