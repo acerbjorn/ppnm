@@ -35,6 +35,11 @@ public partial class vector {
         }
         return x;
     }
+    public static vector basis(int n, int i) {
+        vector x = new vector(n);
+        x[i] = 1;
+        return x;
+    }
     public static vector linspace(double start, double end, int entries=100, double spacing=0){
         if (spacing == 0) { // I don't like checking this way but the is null comparison doesn't seem to work in this version of c#
             spacing = (end-start)/entries;
@@ -47,5 +52,25 @@ public partial class vector {
         }
         return points;
         
+    }
+    public double[] to_array() {
+        return (double[]) data.Clone();
+    }
+    public override string ToString() {
+        // Should maybe define IFormatable Interface instead?
+        string ret_val = "(";
+        foreach(double entry in data) {
+            ret_val += entry.ToString();
+            ret_val += ", ";
+            }
+        ret_val += ")";
+        return ret_val;
+    }
+    public vector slice(int a, int b) {
+        vector v_slice = new vector(b-a);
+        for (int i=a; i<b;i++) {
+            v_slice[i-a] = this[i];
+        }
+        return v_slice;
     }
 }

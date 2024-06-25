@@ -6,7 +6,10 @@ default: Out.txt time.svg
 
 include ../preamble.mk
 
-time.svg: time.gp time.decomp.txt time.abs_det.txt time.solve.txt time.inverse.txt 
+scenic: default
+	imv *.svg
+
+time.svg: time.gp time.decomp.txt # time.abs_det.txt time.solve.txt time.inverse.txt 
 
 	gnuplot -e $(GPVARS) $<
 	

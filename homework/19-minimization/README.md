@@ -1,6 +1,6 @@
 # Minimization
 I'm not certain this implementation is bug-free, I've spent some time testing
-especially the hessian implementation especially, and it seems to be numerically
+the hessian implementation, and it seems to be numerically
 unstable at the suggested Pow(2,-26) dx scale. These are detailed in the forward
 vs central difference section.
 

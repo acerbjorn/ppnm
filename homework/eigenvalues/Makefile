@@ -1,21 +1,27 @@
 TIMES = $(filter time.%.txt, $^)
 GPVARS = "datafiles = '$(TIMES)'; n_files = $(words $(TIMES))"
+GPIO = "input_file = $<; output_file = $@"
 
 .PHONEY: default
-default: hydrogen_atom.exe Out.txt
-	mono hydrogen_atom.exe -w
+default: Out.txt wavefunction.svg
+#	mono hydrogen_atom.exe -w
 
 include ../preamble.mk
-
-# time.svg: time.gp time.decomp.txt time.abs_det.txt time.solve.txt time.inverse.txt 
-
-# 	gnuplot -e $(GPVARS) $<
 
 scenic: default
 	imv *.svg	
 
-wavefunction.txt: hydrogen_atom.exe
-	mono $< -w > $@
+wavefunction.svg: wavefunction.gp wavefunction.txt
+	gnuplot wavefunction.gp
+
+wavefunction.txt: hydrogen_atom.exe Makefile
+	mono $< -w -n:3 -r_max:30 | column -t > $@
+
+converge_dr.svg: converge_dr.txt convergence.gp
+	gnuplot -e $(GPIO) convergence.gp
+
+converge_dr.svg: converge_dr.txt convergence.gp
+	gnuplot -e $(GPIO) convergence.gp
 
 Out.txt: test.exe
 	mono test.exe -tests:1000 -max_dim:10 > $@

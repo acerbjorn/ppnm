@@ -14,7 +14,7 @@ class evd_test {
             if (words[0] == "-max_dim") max_dim = (int)double.Parse(words[1]);
         }
         decomp_tests(tests, max_dim, seed);
-        // hamiltonian_test(tests, max_dim, seed);
+        hamiltonian_test(tests, max_dim, seed);
     }
     static void decomp_tests(int tests, int max_dim, int seed) {
         var rnd = new System.Random(seed);
@@ -80,9 +80,9 @@ class evd_test {
         int n;
         double a, b, x_min, x_max;
         int failed_diff = 0;
-        System.Console.WriteLine($"Testing second-order point differentiation of {tests} parabolas of length n with 2<=n<={max_length} and spanning x_min, x_max € [-10,10]");
+        System.Console.WriteLine($"Testing second-order point differentiation of {tests} parabolas of length n with 3<=n<={max_length} and spanning x_min, x_max € [-10,10]");
         for (int test_num=0; test_num<tests; test_num++) {
-            n = rnd.Next(2,max_length);
+            n = rnd.Next(3,max_length);
             a = rnd.NextDouble();
             b = rnd.NextDouble();
             x_min = 20*rnd.NextDouble()-10;
@@ -98,14 +98,15 @@ class evd_test {
                 (double x) => a
             );
             matrix D = construct_hamiltonian(rs, (double r) => 0);
-            D.print();
-            vector Df = D*f;
+            // D.print();
+            vector Df = -D*f;
 
-            if (!dfdx.approx(Df)) {
+            if (!dfdx.slice(1,n-1).approx(Df.slice(1,n-1))) {
                 failed_diff += 1;
                 System.Console.Write("dfdx != Df\n");
                 dfdx.print("dfdx: ");
                 Df.print("Df: ");
+                Df.slice(1,n-1).print("Df_inner:");
                 System.Console.Write("\n\n");
             }
             

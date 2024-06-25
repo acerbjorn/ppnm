@@ -1,3 +1,4 @@
+pub mod matrix;
 pub mod sfuns;
 pub fn add(left: usize, right: usize) -> usize {
     left + right

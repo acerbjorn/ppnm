@@ -33,4 +33,9 @@ public class genlist<T> {
         return data[size];
         
     }
+    public T[] to_array() {
+        T[] output_array = new T[this.size];
+        System.Array.Copy(data, output_array, size);
+        return output_array;
+    }
 }
