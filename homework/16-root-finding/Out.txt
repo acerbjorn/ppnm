@@ -1,0 +1,14 @@
+Testing minimization of the rosenbrock function, starting guess (0, 0, )
+	We expect minima at (1,1).
+	Found minima at (0.99993639121783, 0.999854253607184, )
+Testing minimization of the himmelblau function, 100 randomized starting points in [-6,6]x[-6,6]
+	We expect four distinct minima.
+	Found extrema at (-3.77939543393297, -3.28324180136567, ), f(x) = 0.000
+	Found extrema at (0.0866776612076081, 2.88425524115639, ), f(x) = 67.719
+	Found extrema at (3.3851546690288, 0.0738523157950555, ), f(x) = 13.312
+	Found extrema at (-2.80511765719658, 3.13132124982375, ), f(x) = 0.000
+	Found extrema at (3.00008579109869, 1.99997719883288, ), f(x) = 0.000
+	Found extrema at (-3.0730619757187, -0.0813362333019139, ), f(x) = 104.015
+	Found extrema at (3.58442835967963, -1.84812674085731, ), f(x) = 0.000
+	Found extrema at (-0.270845043323886, -0.923032458988481, ), f(x) = 181.617
+	Found extrema at (-0.12794591506095, -1.95382215406788, ), f(x) = 178.337
