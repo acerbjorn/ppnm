@@ -1,0 +1,8 @@
+Evaluating f(x)=1/sqrt(x)	        result		iterations
+	expected:                       2
+	without transformation:         1.99996149664622	424
+	Clenshaw-Curtis transformation: 1.99999201046432	16
+Evaluating g(x)=ln(x)/sqrt(x)
+	expected:                       -4
+	without transformation:         -3.99991691110444	448
+	Clenshaw-Curtis transformation: -3.99987385646141	96

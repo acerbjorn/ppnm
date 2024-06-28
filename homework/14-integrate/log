@@ -1,0 +1,3 @@
+line 0: undefined variable: test_erf
+
+make: *** [Makefile:18: test_erf.svg] Error 1

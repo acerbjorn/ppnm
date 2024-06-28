@@ -1,0 +1,13 @@
+Testing numeric integration of well known integrals.
+∫_0^1 dx √(x) = 2/3 ,
+I_num         = 0.666953909054655
+
+∫_0^1 dx 1/√(x) = 2
+I_num           = 1.99996149664622
+
+∫_0^1 dx 4√(1-x²) = π
+I_num             = 3.14183457802727
+
+∫_0^1 dx ln(x)/√(x) = -4
+I_num               = -3.99991691110444
+
