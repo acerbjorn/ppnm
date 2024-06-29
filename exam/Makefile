@@ -6,7 +6,7 @@ MKLIB = mcs -target:library -out:$@ $(LIBS) $(CODE)
 DMITLIBS = ../libs
 
 .PHONEY: default
-default: sinus1.svg wavelet1.svg wavelet2.svg
+default: sinus1.svg wavelet1.svg wavelet2.svg comp_wavelet.svg
 
 scenic: default
 	imv *.svg
@@ -25,6 +25,15 @@ Out.txt: lsec_test.exe
 
 lsec_test.exe: lsec_test.cs ls_error_conceal.dll matrix.dll
 	$(MKEXE)
+	
+comp_wavelet.svg: comparison.txt err_plot.gp
+	gnuplot -e "out_file='$@'; in_file='$<'; n_i=0;title='Error on wavelets in the range [-10:10] with 0.1 between points';" err_plot.gp
+
+comparison.txt: spline_vs_lsec.exe
+	mono $< > $@
+
+spline_vs_lsec.exe: spline_vs_lsec.cs ls_error_conceal.dll matrix.dll splines.dll
+	$(MKEXE)
 
 ls_error_conceal.dll: ls_error_conceal.cs matrix.dll qrgs.dll
 	$(MKLIB)
@@ -36,3 +45,4 @@ lsfit.dll : ../../homework/11-least-squares/lsfit.cs matrix.dll
 	$(MKLIB)
 
 qrgs.dll: ../homework/lineq/qrgs.cs matrix.dll; $(MKLIB)
+splines.dll: ../homework/12-splines/splines.cs matrix.dll; $(MKLIB)
