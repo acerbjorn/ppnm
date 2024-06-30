@@ -3,6 +3,7 @@ LIBS = $(addprefix -reference:, $(filter %.dll, $^))
 EXES = $(filter %.exe, $^)
 MKEXE = mcs -target:exe -out:$@ $(LIBS) $(CODE)
 MKLIB = mcs -target:library -out:$@ $(LIBS) $(CODE)
+TIME = time --output=$@ --append --quiet --format "$$timed_var\t%e\t%U\t%x"
 DMITLIBS = ../libs
 
 .PHONEY: default
@@ -35,6 +36,27 @@ comparison.txt: spline_vs_lsec.exe
 spline_vs_lsec.exe: spline_vs_lsec.cs ls_error_conceal.dll matrix.dll splines.dll
 	$(MKEXE)
 
+timed.svg: split_time.txt time.gp
+	gnuplot -e "out_file='$@'; in_file='$<';" time.gp
+	
+split_time.txt: split_test.exe
+	rm -f $@
+	for timed_var in $$(seq 100 1000 44100); do\
+		 $(TIME) mono $< -sample_rate:$$timed_var;\
+	done
+	echo >> $@
+	echo >> $@
+	for timed_var in $$(seq 100 100 3100); do\
+		 $(TIME) mono $< -no_chunk -sample_rate:$$timed_var;\
+	done
+	
+
+Out_split.txt: split_test.exe
+	mono $< > $@
+
+split_test.exe: split_test.cs ls_error_conceal.dll matrix.dll
+	$(MKEXE)
+	
 ls_error_conceal.dll: ls_error_conceal.cs matrix.dll qrgs.dll
 	$(MKLIB)
 
