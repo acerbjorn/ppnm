@@ -77,7 +77,7 @@ public class ann{
     }
     
     public void train(vector x,vector y){
-        this.p = min.newton(
+        this.p = min.downhill_simplex(
             (vector p) => loss_function(p,x,y),
             this.p,
             max_iter: 2000
