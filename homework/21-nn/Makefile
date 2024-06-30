@@ -25,4 +25,4 @@ nn.dll: nn.cs matrix.dll minimize.dll; $(MKLIB)
 	
 .PHONEY: clean
 clean: 
-	rm matrix.dll out.%.txt
+	$(RM) matrix.dll nn.dll nn_derivs.exe nn_approximation.exe wavelet_derivs.svg wavelet_derivs_out.txt wavelet_fit.svg wavelet_fit_out.txt
