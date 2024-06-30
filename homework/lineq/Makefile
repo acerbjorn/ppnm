@@ -28,9 +28,6 @@ test.exe: test.cs matrix.dll qrgs.dll
 time.exe: time.cs matrix.dll qrgs.dll
 	$(MKEXE)
 
-qrgs.dll: qrgs.cs matrix.dll
-	$(MKLIB)
-
 .PHONEY: clean
 clean: 
-	rm matrix.dll Out.txt time.*.txt log.gpi time.svg
+	$(RM) matrix.dll Out.txt time.*.txt time.svg qrgs.dll test.exe time.exe qrgs.dll test.exe time.exe
