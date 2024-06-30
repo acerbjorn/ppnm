@@ -9,7 +9,7 @@ class nn_approximation {
         vector x_obs = vector.linspace(-1,1,100);
         // Console.Error.Write($"x observations: {x_obs}");
         vector y_obs = x_obs.map(g);
-        ann nn = new ann(5, rng: rng);
+        ann nn = new ann(10, rng: rng);
         nn.train(x_obs, y_obs);
         vector xs = vector.linspace(-1,1,200);
         Console.WriteLine("x\tg(x)\tF_p(x)\tAnti-derivative(nn)\tFirst-derivative(nn)\tSecond-derivative(nn)");
@@ -24,6 +24,6 @@ class nn_approximation {
         }
     }
     static double g(double x) {
-        return Cos(5*x-1)*Exp(-x*x);
+        return 3*x*x-7*x-10;
     }
 }

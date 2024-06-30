@@ -39,7 +39,7 @@ public class ann{
         return response(x,this.p);
     }
     public double anti_deriv_response(double x){
-        return anti_deriv_response(x,this.p);
+        return anti_deriv_response(x,this.p)-anti_deriv_response(0,this.p);
     }
     public double first_deriv_response(double x){
         return first_deriv_response(x,this.p);
