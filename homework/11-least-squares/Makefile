@@ -22,11 +22,6 @@ ThX_data.txt: halflife.exe
 Out.txt: halflife.exe
 	mono $< > $@
 
-time.%.txt: time.exe
-	for timed_var in $$(seq 5 5 400); do\
-		$(TIME) mono time.exe $* $$timed_var;\
-	done
-
 halflife.exe: halflife.cs lsfit.dll matrix.dll
 	$(MKEXE)
 
@@ -38,4 +33,4 @@ qrgs.dll: ../lineq/qrgs.cs matrix.dll
 
 .PHONEY: clean
 clean: 
-	rm matrix.dll Out.txt time.*.txt log.gpi time.svg
+	$(RM) matrix.dll qrgs.dll lsfit.dll halflife.exe Out.txt ThX_data.txt ThX_lambda.fit lambda_fit.svg

@@ -57,4 +57,4 @@ hessian_stability.exe: hessian_stability.cs matrix.dll hessian.dll;
 	
 .PHONEY: clean
 clean: 
-	rm matrix.dll out.%.txt
+	$(RM) matrix.dll hessian_stability.exe hessian_test.exe test_simplex.exe test_function_minimization.exe breit_wigner_fit.exe higgs_fit.txt Out*.txt *.svg

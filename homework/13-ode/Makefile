@@ -1,11 +1,11 @@
 .PHONEY: default
-default: test_sinus_graph.svg test_figure_eight_out.txt
+default: test_sinus_graph.svg test_damped_graph.svg test_eq_graph.svg test_figure_eight_graph.svg
 	
 .NOTINTERMEDIATE: 
 
 include ../preamble.mk
 
-scenic: test_sinus_graph.svg test_damped_graph.svg test_eq_graph.svg test_figure_eight_graph.svg
+scenic: default
 	imv *.svg
 
 test_%_graph.svg: test_%_graph.gp test_%_out.txt 
@@ -32,3 +32,4 @@ rk.dll: rk.cs matrix.dll
 
 .PHONEY: clean
 clean: 
+	$(RM) rk.dll matrix.dll test_*.exe test_*_out.txt test_sinus_graph.svg test_damped_graph.svg test_eq_graph.svg test_figure_eight_graph.svg

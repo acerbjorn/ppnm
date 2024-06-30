@@ -29,4 +29,5 @@ splines.dll: splines.cs matrix.dll
 
 
 .PHONEY: clean
-clean: 
+clean:
+	$(RM) splines.dll matrix.dll qspline_sin.exe qspline_sin.txt qspline_sin.svg linterp_test.exe linterp_cos.svg cos_x_linear.txt

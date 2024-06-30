@@ -46,4 +46,4 @@ sfuns.dll: ../../exercises/plot/sfuns.cs
 		
 .PHONEY: clean
 clean: 
-	rm matrix.dll out.%.txt
+	$(RM) matrix.dll sfuns.dll integrate.dll test_erf_resid.exe test_erf.exe test_erf_resid.txt test_erf.txt test_erf_resid.svg test_erf.svg test_definite.txt test_definite.exe ClenCurt_test.txt ClenCurt.exe

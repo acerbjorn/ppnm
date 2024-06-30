@@ -16,4 +16,4 @@ integ_mc.dll: integ_mc.cs matrix.dll; $(MKLIB)
 
 .PHONEY: clean
 clean: 
-	rm matrix.dll out.%.txt
+	$(RM) matrix.dll integ_mc.dll out.%.txt %.exe

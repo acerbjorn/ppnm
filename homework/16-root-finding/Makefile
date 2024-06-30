@@ -24,4 +24,4 @@ rk.dll: ../13-ode/rk.cs matrix.dll; $(MKLIB)
 	
 .PHONEY: clean
 clean: 
-	rm matrix.dll out.%.txt
+	$(RM) matrix.dll rk.dll qrgs.dll roots.dll test_function_minimization.exe wavefunction.exe Out.txt Out.r_min.txt
