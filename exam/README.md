@@ -21,6 +21,8 @@ Generally the average error is lower and as the error rate (chance to replace
 signal with 0) increased to unreasonable levels, the least squares method is a
 lot less prone to wild swings.
 
+![Comparison of error introduced by error concealment with lsec and splines](comp_wavelet.svg)
+
 # C) Allow chunking the reconstruction to save time
 The QRGS solver I'm using to solve the error concealment is O(n³) and that's
 a problem when you want to use such error concealment for long sequences, such
@@ -37,3 +39,5 @@ magnitudes faster. Apparently without any loss of reconstruction accuracy. The
 than 5% divergence in the signal at some of the points (that is approx(y,
 y_reconstructed, 5e-2, 5e-2)). The only erroring reconstructions are at 100
 sample rate, and that's to be expected with a 440 hz signal.
+
+![Running time of error concealment for the chunked and non chunked algorithms](timed.svg)
